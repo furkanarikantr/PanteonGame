@@ -1,0 +1,9 @@
+.loginLayout {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../Images/strategyBackgorund.jpg');
+  background-size: cover;
+}

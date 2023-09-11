@@ -1,0 +1,65 @@
+.registerPageContainer {
+  border-radius: 1rem;
+  height: 60vh;
+  width: 50rem;
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 15vh auto 10vh;
+  background-color: rgba(255, 255, 255);
+}
+
+.registerPageGridItem {
+}
+
+.registerCardHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.registerCardBody {
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+}
+.registerCardBodyUserName {
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 5rem;
+  margin-top: 1.5rem;
+  margin-right: 5rem;
+  font-size: 2rem;
+}
+.registerCardBodyEmail {
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  font-size: 2rem;
+}
+.registerCardBodyPassword {
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  font-size: 2rem;
+}
+
+.registerCardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  gap: 1rem;
+}
