@@ -9,6 +9,30 @@
   background-color: white;
 }
 
+@media (max-width: 1100px) {
+  .modal-container {
+    position: fixed;
+    z-index: 1; /* Modal diğer elementlerin üzerinde görünmelidir */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    background-color: white;
+  }
+}
+
+@media (max-width: 450px) {
+  .modal-container {
+    position: fixed;
+    z-index: 1; /* Modal diğer elementlerin üzerinde görünmelidir */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    background-color: white;
+  }
+}
+
 /* Modal İçeriği */
 .modal-main {
   padding: 20px;

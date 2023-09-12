@@ -39,6 +39,11 @@ export default function AddBuildModal({
           alert('Ekleme Başarılı')
           refreshDataBuild()
           refreshDataBuildType()
+
+          setBuildingType('')
+          setBuildingCost(0)
+          setConstructionTime(0)
+
           navigate('/build')
         }
       }

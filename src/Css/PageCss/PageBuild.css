@@ -89,6 +89,6 @@
   height: 30%;
   border-top: 1px solid #fb6b0b;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
 }

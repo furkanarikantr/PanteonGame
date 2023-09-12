@@ -39,7 +39,7 @@ export default function Footer() {
               href='https://www.linkedin.com/in/arikanfurkan/'
               target='_blank'
             >
-              Furkan Arikan
+              Furkan Arıkan
             </a>
             for Panteon Games.
           </span>

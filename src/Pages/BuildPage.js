@@ -130,9 +130,6 @@ export default function BuildPage() {
                 <button class='btn btn-primary fs-6' style={{ width: '7rem' }}>
                   Delete
                 </button>
-                <button class='btn btn-primary fs-6' style={{ width: '7rem' }}>
-                  Edit
-                </button>
               </div>
             </form>
           ))}
