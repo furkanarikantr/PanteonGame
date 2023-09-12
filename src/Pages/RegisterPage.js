@@ -30,16 +30,13 @@ export default function RegisterPage() {
         if (response.data.success == false) {
           alert(response.data.message)
         } else {
-          navigate('/login')
+          navigate('/')
         }
-        // Örneğin: history.push('/dashboard');
       } else {
         console.error('Oturum açma başarısız.')
-        // Oturum açma hatası ile ilgili kullanıcıya bilgi verin.
       }
     } catch (error) {
       console.error('Oturum açma hatası:', error)
-      // Oturum açma hatası ile ilgili kullanıcıya bilgi verin.
     }
   }
 

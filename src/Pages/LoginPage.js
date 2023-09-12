@@ -24,17 +24,19 @@ export default function LoginPage() {
       })
 
       if (response.data) {
-        localStorage.setItem('token', response.data.data.token) // Token'ı localStorage'a kaydet
-        // Oturum açma başarılı ise kullanıcıyı başka bir sayfaya yönlendirebilirsiniz.
-        // Örneğin: history.push('/dashboard');
-        navigate('/build')
+        if (response.data.success == false) {
+          console.log(response.data.message)
+          alert(response.data.message)
+        } else {
+          alert(response.data.message)
+          localStorage.setItem('token', response.data.data.token)
+          navigate('/build')
+        }
       } else {
         console.error('Oturum açma başarısız.')
-        // Oturum açma hatası ile ilgili kullanıcıya bilgi verin.
       }
     } catch (error) {
-      console.error('Oturum açma hatası:', error)
-      // Oturum açma hatası ile ilgili kullanıcıya bilgi verin.
+      console.error(error)
     }
   }
 

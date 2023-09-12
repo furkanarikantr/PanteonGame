@@ -7,6 +7,7 @@ export default function Header() {
   const navigate = useNavigate()
 
   const handleLogout = () => {
+    alert('The User Logout Successful!')
     localStorage.removeItem('token')
     navigate('/')
   }

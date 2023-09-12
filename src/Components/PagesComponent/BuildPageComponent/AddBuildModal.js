@@ -36,7 +36,7 @@ export default function AddBuildModal({
         if (response.data.success == false) {
           alert(response.data.message)
         } else {
-          alert('Ekleme Başarılı')
+          alert(response.data.message)
           refreshDataBuild()
           refreshDataBuildType()
 

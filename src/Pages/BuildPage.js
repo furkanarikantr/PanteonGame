@@ -62,7 +62,7 @@ export default function BuildPage() {
         if (response.data.success === false) {
           alert(response.data.message)
         } else {
-          alert('Silme Başarılı')
+          alert(response.data.message)
           getBuildList()
           getBuildTypesList()
           navigate('/build')
