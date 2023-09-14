@@ -1,0 +1,21 @@
+.errorPageContainer {
+  text-align: center;
+  color: white;
+}
+
+.error {
+  font-size: 10rem;
+  letter-spacing: 2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+}
+
+.errorFound {
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+
+.errorText {
+  font-size: 2rem;
+  margin-top: 2rem;
+}

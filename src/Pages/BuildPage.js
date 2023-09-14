@@ -19,7 +19,7 @@ export default function BuildPage() {
 
   const getBuildList = async () => {
     axios
-      .get('http://furkanarikan.online/api/Build/build-list', {
+      .get('https://furkanarikan.online/api/Build/build-list', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
@@ -34,7 +34,7 @@ export default function BuildPage() {
 
   const getBuildTypesList = async () => {
     axios
-      .get('http://furkanarikan.online/api/BuildType/build-type-list', {
+      .get('https://furkanarikan.online/api/BuildType/build-type-list', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
@@ -51,7 +51,7 @@ export default function BuildPage() {
     e.preventDefault()
     try {
       axios
-        .delete(`http://furkanarikan.online/api/Build/build-delete`, {
+        .delete(`https://furkanarikan.online/api/Build/build-delete`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },

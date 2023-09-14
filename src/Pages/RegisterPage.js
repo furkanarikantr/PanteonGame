@@ -18,7 +18,7 @@ export default function RegisterPage() {
       const response = await axios({
         method: 'POST',
 
-        url: 'http://furkanarikan.online/api/User/add-user',
+        url: 'https://furkanarikan.online/api/User/add-user',
         data: {
           userName,
           password,

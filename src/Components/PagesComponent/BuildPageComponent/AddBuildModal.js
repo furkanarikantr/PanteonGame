@@ -21,7 +21,7 @@ export default function AddBuildModal({
     try {
       const response = await axios({
         method: 'POST',
-        url: 'http://furkanarikan.online/api/Build/build-add',
+        url: 'https://furkanarikan.online/api/Build/build-add',
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
           // Diğer başlıkları da buraya ekleyebilirsiniz
@@ -48,6 +48,10 @@ export default function AddBuildModal({
         }
       }
     } catch (error) {
+      if (error.response.status === 401) {
+        localStorage.removeItem('token')
+        navigate('/')
+      }
       console.error('İşlem hatası:', error)
     }
   }
