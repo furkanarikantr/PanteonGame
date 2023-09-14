@@ -6,7 +6,7 @@ https://panteongamedemoproject.netlify.app/
 
 In this section, there are improvements related to the front-end.
 
-React.Js
-Axios
-React-Router-Dom
-Bootstrap
+- React.Js
+- Axios
+- React-Router-Dom
+- Bootstrap
