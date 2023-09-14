@@ -1,4 +1,7 @@
-Panteon Game Demo Project React.Js Side.
+Panteon Game Demo Project React.Js Side. https://panteongamedemoproject.netlify.app/ 
+
+Please confirm the content from the site in the site settings when you go to the site link.
+Chrome => Settings => Privacy and Security => Site Settings => panteongamedemoproject.netlify.app => Unsafe content => Allow
 
 ![6wronglogin](https://github.com/furkanarikantr/PanteonGame/assets/126795641/237c6d71-2494-4cf0-89e2-3630db60c644)
 ![7truelogin](https://github.com/furkanarikantr/PanteonGame/assets/126795641/84ff9170-645d-4469-b630-0997e876810d)
