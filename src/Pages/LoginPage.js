@@ -16,7 +16,7 @@ export default function LoginPage() {
       const response = await axios({
         method: 'POST',
 
-        url: 'https://localhost:7237/api/Account/authenticate',
+        url: 'http://furkanarikan.online/api/Account/authenticate',
         data: {
           username,
           password,
@@ -25,7 +25,6 @@ export default function LoginPage() {
 
       if (response.data) {
         if (response.data.success == false) {
-          console.log(response.data.message)
           alert(response.data.message)
         } else {
           alert(response.data.message)

@@ -18,7 +18,7 @@ export default function RegisterPage() {
       const response = await axios({
         method: 'POST',
 
-        url: 'https://localhost:7237/api/User/add-user',
+        url: 'http://furkanarikan.online/api/User/add-user',
         data: {
           userName,
           password,
@@ -30,6 +30,7 @@ export default function RegisterPage() {
         if (response.data.success == false) {
           alert(response.data.message)
         } else {
+          alert(response.data.message)
           navigate('/')
         }
       } else {
@@ -41,7 +42,7 @@ export default function RegisterPage() {
   }
 
   return (
-    <form className='loginPageForm' onSubmit={signUpFormSubmit}>
+    <form onSubmit={signUpFormSubmit}>
       <div className='registerPageContainer'>
         <div className='registerPageGridItem '>
           <div className='registerCardHeader'>
@@ -139,6 +140,7 @@ export default function RegisterPage() {
             <button
               style={{ width: '15rem', marginRight: '1rem' }}
               class='btn btn-primary fs-3'
+              type='submit'
             >
               Register
             </button>

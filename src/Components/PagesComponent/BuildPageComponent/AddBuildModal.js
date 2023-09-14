@@ -21,7 +21,7 @@ export default function AddBuildModal({
     try {
       const response = await axios({
         method: 'POST',
-        url: 'https://localhost:7237/api/Build/build-add',
+        url: 'http://furkanarikan.online/api/Build/build-add',
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
           // Diğer başlıkları da buraya ekleyebilirsiniz

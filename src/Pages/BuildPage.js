@@ -19,7 +19,7 @@ export default function BuildPage() {
 
   const getBuildList = async () => {
     axios
-      .get('https://localhost:7237/api/Build/build-list', {
+      .get('http://furkanarikan.online/api/Build/build-list', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
@@ -34,7 +34,7 @@ export default function BuildPage() {
 
   const getBuildTypesList = async () => {
     axios
-      .get('https://localhost:7237/api/BuildType/build-type-list', {
+      .get('http://furkanarikan.online/api/BuildType/build-type-list', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
@@ -49,25 +49,29 @@ export default function BuildPage() {
 
   const deleteBuildFormSubmit = async (e, buildId) => {
     e.preventDefault()
-
     try {
-      const response = await axios({
-        method: 'delete',
-        url: `https://localhost:7237/api/Build/build-delete?buildId=${buildId}`,
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem('token')}`,
-        },
-      })
-      if (response.data) {
-        if (response.data.success === false) {
-          alert(response.data.message)
-        } else {
-          alert(response.data.message)
-          getBuildList()
-          getBuildTypesList()
-          navigate('/build')
-        }
-      }
+      axios
+        .delete(`http://furkanarikan.online/api/Build/build-delete`, {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem('token')}`,
+          },
+          data: {
+            buildId,
+          },
+        })
+        .then((response) => {
+          if (response.data.success === false) {
+            alert(response.data.message)
+          } else {
+            alert(response.data.message)
+            getBuildList()
+            getBuildTypesList()
+            navigate('/build')
+          }
+        })
+        .catch((error) => {
+          console.error('Veri çekme hatası:', error)
+        })
     } catch (error) {
       if (error.response.status === 401) {
         localStorage.removeItem('token')
