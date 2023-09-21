@@ -1,5 +1,5 @@
 
-This project repository was prepared for Panteon Games job interview. 
+This project repository was prepared for Panteon Games.
 
 https://panteongamedemoproject.netlify.app/ 
 
