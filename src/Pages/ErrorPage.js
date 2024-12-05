@@ -7,7 +7,7 @@ export default function ErrorPage() {
       <div className='error'>
         <div>404</div>
       </div>
-      <div className='errorFound'>Not Found</div>
+      <div className='errorFound'>Not Founddddd</div>
       <div className='errorText'>
         The resource requested could not be found on this server!
       </div>
